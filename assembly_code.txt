@@ -1,0 +1,16 @@
+LOCATION  LINE_LABEL  INSTRUC  TARGET_LABEL  OPCODE
+          PROG3x      START    0030
+0030                  LDX      Var1      040045
+0033                  TD      Var2      E0003F
+0036                  JEQ      Var3      300033
+0039                  LDCH     Var4,x    50804C
+003C                  WD      Var4      DC004C
+003F                  TIX      Var5      2C0048
+0042                  JLT      Var3,4  390033
+0045                  RSUB                  4C0000
+0048                  FIX                C4           
+0049                  LDA      Var6      000064
+004C                  FIX                C4           
+004D                  RESB     100
+00B6                  FIX                C4           
+00B7                  END
